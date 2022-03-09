@@ -1,3 +1,21 @@
+# Qualogy UI library
+
+## Quick start guide
+
+Clone the repo
+
+Run `yarn` or `npm i` to install all dependencies
+
+> You can use `npm run` instead of `yarn` for below commands.
+
+Run `yarn storybook` to run the storybook on local environment
+
+Run `yarn build-storybook` & `yarn deploy-storybook` to deploy the latest changes to [Github page](https://cmuthuraj.github.io/qualogy_ui)
+
+---
+
+To know more about how this project has been setup, read below.
+
 # TSDX React w/ Storybook User Guide
 
 This project is bootstraped with TSDX. Let’s get you oriented with what’s here and how to use it.
@@ -110,25 +128,6 @@ You can also choose to install and use [invariant](https://github.com/palmerhq/t
 CJS, ESModules, and UMD module formats are supported.
 
 The appropriate paths are configured in `package.json` and `dist/index.js` accordingly. Please report if any issues are found.
-
-## Deploying the Example Playground
-
-The Playground is just a simple [Parcel](https://parceljs.org) app, you can deploy it anywhere you would normally deploy that. Here are some guidelines for **manually** deploying with the Netlify CLI (`npm i -g netlify-cli`):
-
-```bash
-cd example # if not already in the example folder
-npm run build # builds to dist
-netlify deploy # deploy the dist folder
-```
-
-Alternatively, if you already have a git repo connected, you can set up continuous deployment with Netlify:
-
-```bash
-netlify init
-# build command: yarn build && cd example && yarn && yarn build
-# directory to deploy: example/dist
-# pick yes for netlify.toml
-```
 
 ## Named Exports
 
