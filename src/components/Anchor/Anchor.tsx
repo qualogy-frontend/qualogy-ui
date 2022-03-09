@@ -9,7 +9,7 @@ const AnchorMap = {
   default: 'text-primary font-bold',
 };
 
-interface AnchorProps {
+interface IAnchorProps {
   children?: React.ReactNode;
   action?: () => void;
   type?: keyof typeof AnchorMap;
@@ -29,7 +29,7 @@ interface AnchorProps {
  * @type Is used to change the look of the component
  * @returns React component
  */
-export const Anchor: React.FC<AnchorProps> = ({
+export const Anchor: React.FC<IAnchorProps> = ({
   children,
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   action = () => {},

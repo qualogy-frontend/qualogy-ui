@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 
-interface Props {
+interface IBannerProps {
   title?: string;
 }
 
-export const Banner: FC<Props> = ({
+export const Banner: FC<IBannerProps> = ({
   title = 'Met welke functie ga jij de volgende stap maken?',
   children,
 }) => {

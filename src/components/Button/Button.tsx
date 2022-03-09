@@ -15,7 +15,7 @@ export const buttonMap = {
   'toggle-inactive': 'text-gray-500',
 };
 
-export interface ButtonProps {
+export interface IButtonProps {
   children?: React.ReactNode;
   action?: (e: React.MouseEvent<HTMLElement>) => void;
   type?: keyof typeof buttonMap;
@@ -29,7 +29,7 @@ export interface ButtonProps {
   extraClasses?: string;
 }
 
-export const Button: React.FC<ButtonProps> = ({
+export const Button: React.FC<IButtonProps> = ({
   children,
   // eslint-disable-next-line @typescript-eslint/no-empty-function
   action = () => {},
