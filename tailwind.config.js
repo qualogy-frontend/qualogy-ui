@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'jit', // enabling Jist In Time Compiler engine
-  purge: ['./src/components/**/*.{ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./src/components/**/*.{ts,tsx}'],
+  // darkMode: false, // or 'media' or 'class'
   variants: {
     extend: {},
   },
