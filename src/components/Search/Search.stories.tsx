@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Story, Meta } from '@storybook/react';
 import { Search } from './Search';
-import { useState } from '@storybook/addons';
 
 export default {
   component: Search,
