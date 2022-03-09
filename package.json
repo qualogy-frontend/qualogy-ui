@@ -75,5 +75,15 @@
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
     "typescript": "^4.6.2"
+  },
+  "resolutions": {
+    "prismjs": "^1.27.0",
+    "node-fetch": "^2.6.7",
+    "marked": "^4.0.10",
+    "ansi-regex": "^5.0.1",
+    "glob-parent": "^5.1.2",
+    "trim": "^0.0.3",
+    "node-notifier": "^8.0.1",
+    "highlight.js": "^10.4.1"
   }
 }
