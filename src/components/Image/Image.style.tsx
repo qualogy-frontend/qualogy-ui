@@ -55,8 +55,8 @@ export const ImageSquare = styled(ImageBase)`
     css`
       position: relative;
       /* top: ${top}; */
-      animation-name: ${(props) => moveAnimation(top, alternate)};
-      animation-duration: ${(props) => animSpeed || '5s'};
+      animation-name: ${moveAnimation(top, alternate)};
+      animation-duration: ${animSpeed || '5s'};
       animation-iteration-count: infinite;
     `}
 

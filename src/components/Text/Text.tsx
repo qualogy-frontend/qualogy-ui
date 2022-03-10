@@ -49,11 +49,11 @@ export const H1Tag = ({
 
 export const H2Tag = ({
   children,
-  color,
+  // color,
   classes = '',
   size = 'text-2xl md:text-3xl lg:text-5xl',
-  my = 'mb-5',
-}: HProps) => {
+}: // my = 'mb-5',
+HProps) => {
   return (
     <h2
       className={`font-serif bg-clip-text text-transparent bg-gradient-to-l from-primary to-ternary leading-normal ${size} md:leading-normal lg:leading-normal ${classes}`}
