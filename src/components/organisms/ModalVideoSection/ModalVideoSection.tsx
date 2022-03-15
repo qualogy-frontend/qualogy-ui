@@ -32,6 +32,7 @@ export interface IModalVideoSectionProps {
       }
     ];
   };
+  baseUrl?: string;
 }
 
 export const Player: FC<IPlayer> = ({ type, link }) => {
@@ -68,13 +69,15 @@ export const Player: FC<IPlayer> = ({ type, link }) => {
   }
 };
 
-export const ModalVideoSection: FC<IModalVideoSectionProps> = ({ data }) => {
+export const ModalVideoSection: FC<IModalVideoSectionProps> = ({
+  data,
+  baseUrl,
+}) => {
   const [modal, setModal] = useState(false);
-  console.log('data', data);
   const link =
     data.link ||
     (data.file.length > 0
-      ? `${process.env.STRAPI_URL}${data.file[0].url}`
+      ? `${baseUrl ? baseUrl : ''}${data.file[0].url}`
       : '');
   //  modal ? 'https://www.youtube.com/embed/bIrm37MIK5U' : 'https://www.youtube.com/embed/bIrm37MIK5U?start=0'
   return (

@@ -1,18 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { BiDownArrowCircle, BiPlay } from 'react-icons/bi';
+import { BiDownArrowCircle } from 'react-icons/bi';
 import {
   Button,
   IButtonProps,
   IImageProps,
   H1Tag,
   Paragraph,
-  Circle,
   Section,
 } from '../../atoms';
-import { ModalVideo } from '../../molecules';
-import { Player } from '../../organisms';
+import { TopCircle } from '../../molecules';
+import { ModalVideoSection } from '../../organisms';
 import { PageProps, bgColors } from './Intro.interface';
-import { ThemeColors } from '../../../utils';
 
 type DataProps = {
   id: number;
@@ -48,63 +46,14 @@ type DataProps = {
 
 interface IIntroProps extends PageProps {
   data: DataProps;
+  baseUrl?: string;
 }
 
-export const topCircles = () => {
-  return (
-    <>
-      <Circle
-        animate={true}
-        width="100vw"
-        height="100vw"
-        top="5vh"
-        left="-30vw"
-        smTop="-20vh"
-        smLeft="-50vw"
-        mdTop="-5vh"
-        mdLeft="-50vw"
-        xlTop="-30vh"
-        xlLeft="-50vw"
-        xl2Top="-100vh"
-        color={ThemeColors.ternary}
-        id="intro-circle-1"
-      />
-      <Circle
-        animate={true}
-        width="100vw"
-        height="100vw"
-        top="2vh"
-        left="-40vw"
-        smTop="-6vh"
-        smLeft="-50vw"
-        mdTop="-6vh"
-        mdLeft="-60vw"
-        xlTop="-30vh"
-        xl2Top="-80vh"
-        color={ThemeColors.circleLightBrown}
-        id="intro-circle-2"
-      />
-      <Circle
-        animate={true}
-        width="100vw"
-        height="100vw"
-        top="10vh"
-        left="-15vw"
-        smTop="-30vh"
-        smLeft="-50vw"
-        mdTop="10vh"
-        mdLeft="-40vw"
-        xlTop="-20vh"
-        xl2Top="-80vh"
-        color={ThemeColors.circleBrown}
-        id="intro-circle-3"
-      />
-    </>
-  );
-};
-
-export const Intro: React.FC<IIntroProps> = ({ data, background_color }) => {
-  const [modal, setModal] = useState(false);
+export const Intro: React.FC<IIntroProps> = ({
+  data,
+  background_color,
+  baseUrl,
+}) => {
   const navSectionHeight = 75;
   const [topContentDivHeight, setTopContentDivHeight] = useState(0);
   const topContentDivRef = useRef<HTMLDivElement>(null);
@@ -128,11 +77,6 @@ export const Intro: React.FC<IIntroProps> = ({ data, background_color }) => {
   const bgColor = background_color
     ? bgColors[background_color]
     : 'bg-transparent';
-  const link =
-    video?.link ||
-    (video?.file.length > 0
-      ? `${process.env.STRAPI_URL}${video.file[0].url}`
-      : '');
   const hasImage = image && image.length > 0;
 
   return (
@@ -201,36 +145,15 @@ export const Intro: React.FC<IIntroProps> = ({ data, background_color }) => {
             <div className="h-32 lg:h-96 w-full lg:mt-8">
               <img
                 className="h-full w-full object-cover rounded"
-                src={`${process.env.STRAPI_URL}${image[0].src}`}
+                src={`${baseUrl ? baseUrl : ''}${image[0].src}`}
                 alt={image[0].alt}
               />
             </div>
           )}
-          {video && (
-            <>
-              <div
-                id="modal-static"
-                className={`relative z-20 w-full max-w-screen-2xl h-96 mt-4 lg:mt-12 transition-all duration-1000 bg-primary`}
-                //style={{ top: `${modal ? "50% " : top + "px"}` }}
-                onClick={() => setModal(true)}
-              >
-                <div
-                  //ref={modalRef}
-                  className="flex justify-center items-center bg-home-banner bg-cover bg-center w-full h-full rounded shadow-xl pt-12"
-                >
-                  <span className="rounded-full p-2 bg-black bg-opacity-75 cursor-pointer">
-                    <BiPlay color="white" size={52} />
-                  </span>
-                </div>
-              </div>
-              <ModalVideo modal={modal} closeModal={() => setModal(false)}>
-                <Player type={data.video.type} link={link} />
-              </ModalVideo>
-            </>
-          )}
+          {video && <ModalVideoSection data={data.video} />}
         </div>
       </Section>
-      {topCircles()}
+      <TopCircle />
     </>
   );
 };
