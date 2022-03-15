@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { Circle } from '../../molecules/Layout/Circle';
-import { Section } from '../../molecules/Layout/Section';
+import { Circle } from '../../atoms/Layout/Circle';
+import { Section } from '../../atoms/Layout/Section';
 import { ThemeColors } from '../../../utils';
 /**
  *

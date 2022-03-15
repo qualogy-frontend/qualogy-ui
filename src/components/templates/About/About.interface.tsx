@@ -31,12 +31,12 @@ export interface ImageProps {
   mime: string;
   size: number;
   url: string;
-  formats: Formats;
+  formats: Formats | null;
 }
 
 interface Employee {
-  content: string;
-  button: IButtonProps;
+  content: string | null;
+  button: IButtonProps | null;
   image: ImageProps;
   reversed: boolean;
 }
@@ -52,5 +52,5 @@ interface DataProps {
 
 export interface IAboutInterface {
   data: DataProps;
-  imageBase?: string;
+  imageBase: string;
 }

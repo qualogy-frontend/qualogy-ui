@@ -8,6 +8,7 @@ export interface IPostCollectionProps {
   allPosts: IPostInterface[];
   sub: string;
   title: string;
+  imageBase?: string;
   margin?: string;
   count?: number;
 }
@@ -16,6 +17,7 @@ export const PostCollection: React.FC<IPostCollectionProps> = ({
   allPosts,
   sub,
   title,
+  imageBase,
   // margin,
   count = 3,
 }) => {
@@ -39,7 +41,7 @@ export const PostCollection: React.FC<IPostCollectionProps> = ({
               width="100%"
               title={post.title}
               date={post.date}
-              image={`${process.env.STRAPI_URL}${post.coverImage.url}`}
+              image={`${imageBase}${post.coverImage.url}`}
               alt={post.slug}
               author={post?.author?.name}
               authorSlug={post?.author?.slug}

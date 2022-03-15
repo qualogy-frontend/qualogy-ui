@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
-import { GridChildLayout } from '../../molecules/Layout/Grid';
+import { GridChildLayout } from '../Layout/Grid';
 
 export interface IImageBaseProps {
   top?: number;

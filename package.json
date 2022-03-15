@@ -1,5 +1,5 @@
 {
-  "version": "0.1.23",
+  "version": "0.1.27",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build && yarn build-tailwind",
+    "build": "tsdx build && yarn build-tailwind && yarn cpy public dist",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "yarn build",
@@ -65,6 +65,7 @@
     "@types/react-dom": "^17.0.13",
     "@types/styled-components": "^5.1.24",
     "babel-loader": "^8.2.3",
+    "cpy-cli": "^4.1.0",
     "cross-env": "^7.0.3",
     "gh-pages": "^3.2.3",
     "husky": "^7.0.4",

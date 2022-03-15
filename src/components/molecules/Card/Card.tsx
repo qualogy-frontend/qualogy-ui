@@ -4,15 +4,15 @@ import { ThemeColors, dateToText } from '../../../utils';
 import { Button, IButtonProps } from '../../atoms/Button';
 import { Icon, IconMapper } from '../../atoms/Icon';
 import { Image } from '../../atoms/Image';
-import { Row } from '../Layout/Row';
+import { Row } from '../../atoms/Layout/Row';
 import { Paragraph } from '../../atoms/Text';
 import { CardLayout, CardText, ImageWrap } from './Card.style';
 
 export interface ICardLargeImageProps {
   image: string;
   alt: string;
-  text?: string;
-  button?: IButtonProps;
+  text?: string | null;
+  button?: IButtonProps | null;
   reversed?: boolean;
 }
 

@@ -15,7 +15,7 @@ export const posts = [
     excerpt:
       'Sijmen Brakenhoff is a Full stack Developer and Scrum master for Qualogy. Since November 2018, he has worked as ...',
     coverImage: {
-      url: '/uploads/ajr_OW_Hu_d4a0bfb0e8.jpg',
+      url: 'employee.png',
     },
     tags: [
       {
@@ -60,7 +60,7 @@ export const posts = [
     excerpt:
       'Do you want to learn how to build something with React? How updating data can update the front-end real time ...',
     coverImage: {
-      url: '/uploads/83063588_789688794854934_3912974541076299776_o_1028c19ce6.jpg',
+      url: 'employee.png',
     },
     tags: [
       {
@@ -85,7 +85,7 @@ export const posts = [
     excerpt:
       'Working on a screen all day (and often night), your eyes can take a real battering. In September 2019, Apple released ...',
     coverImage: {
-      url: '/uploads/83063588_789688794854934_3912974541076299776_o_1028c19ce6.jpg',
+      url: 'employee.png',
     },
     tags: [
       {
@@ -113,7 +113,7 @@ export const posts = [
     },
     excerpt: 'Some content',
     coverImage: {
-      url: '/uploads/83063588_789688794854934_3912974541076299776_o_1028c19ce6.jpg',
+      url: 'employee.png',
     },
     tags: [
       {

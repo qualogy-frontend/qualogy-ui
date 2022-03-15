@@ -5,7 +5,7 @@ import { ICustomerInterface } from './Customer.interface';
 export const Customer: React.FC<ICustomerInterface> = ({
   data,
   contentAlign = `text-center`,
-  imageBase = process.env.STRAPI_URL,
+  imageBase = '',
 }) => {
   const { content, customers } = data;
   return (

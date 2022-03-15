@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react';
 import { BiPlay } from 'react-icons/bi';
-import { ModalVideo, Section } from '../../molecules';
+import { Section } from '../../atoms';
+import { ModalVideo } from '../../molecules';
 
 interface IPlayer {
   type: 'video' | 'iframe';

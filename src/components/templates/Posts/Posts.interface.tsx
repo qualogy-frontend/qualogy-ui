@@ -57,4 +57,5 @@ type DataProps = {
 };
 export interface IPostsInterface {
   data: DataProps;
+  imageBase: string;
 }

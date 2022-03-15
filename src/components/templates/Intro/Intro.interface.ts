@@ -10,6 +10,6 @@ export const bgColors = {
 };
 
 export interface PageProps {
-  editTheme: (newSettings: any) => void;
+  editTheme?: (newSettings: any) => void;
   background_color?: keyof typeof bgColors;
 }

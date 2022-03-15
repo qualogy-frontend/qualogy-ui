@@ -1,13 +1,13 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import { Banner } from './Banner';
+import { TopCircle } from './TopCircle';
 
 export default {
-  component: Banner,
-  title: 'atoms/Banner',
+  component: TopCircle,
+  title: 'molecules/TopCircle',
 } as Meta;
 
-const Template: Story = (args) => <Banner {...args} />;
+const Template: Story = (args) => <TopCircle {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {};

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, FC } from 'react';
 import styled, { css } from 'styled-components';
 
 export interface ITextProps {
@@ -80,7 +80,7 @@ export const H4Tag = ({ children, color, classes = '' }: IHeadingProps) => {
 
   return (
     <h4
-      className={`font-serif ${textColor} my-6 leading-normal text-3xl md:text-5xl md:leading-normal lg:text-6xl lg:leading-normal ${classes}`}
+      className={`font-serif ${textColor} my-6 leading-normal text-xl md:text-2xl md:leading-normal lg:text-3xl lg:leading-normal ${classes}`}
     >
       {children}
     </h4>
@@ -162,3 +162,5 @@ export const Paragraph = styled.p<ITextProps>`
       ${mobileFontSize && `font-size: ${mobileFontSize};`}
     `}
 `;
+
+export const TextStory: FC = ({ children }) => <>{children}</>;

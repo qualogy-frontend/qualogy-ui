@@ -1,5 +1,13 @@
 import React, { FC } from 'react';
-import { About, Customer, Intro, Jobs, Posts } from '../../templates';
+import {
+  About,
+  Customer,
+  Intro,
+  Jobs,
+  Posts,
+  TitleAndTextSection,
+  JobSection,
+} from '../../templates';
 
 interface ContentProps {
   __component: string;
@@ -31,6 +39,8 @@ export const DynamicComponent: FC<IDynamicComponentProps> = ({
     hero: Intro,
     jobs: Jobs,
     posts: Posts,
+    'title-and-text': TitleAndTextSection,
+    'salesforce-jobs-group': JobSection,
   };
 
   /**

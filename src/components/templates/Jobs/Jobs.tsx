@@ -1,11 +1,18 @@
 import React from 'react';
-import { Title, Paragraph, Image, Button } from '../../atoms';
-import { Section, Grid, GridChild, Circle } from '../../molecules';
+import {
+  Title,
+  Paragraph,
+  Image,
+  Button,
+  Circle,
+  Section,
+  Grid,
+  GridChild,
+} from '../../atoms';
 import { IJobsInterface } from './Jobs.interface';
 import { ThemeColors } from '../../../utils';
 
 export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
-  console.log('Jobs');
   //
   const { sub, content, button } = data;
   //
@@ -36,8 +43,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="50px"
                 height="50px"
                 animSpeed=""
-                src="/assets/people/employee.png"
-                alt="/assets/people/employee.png"
+                src="assets/people/employee.png"
+                alt="assets/people/employee.png"
                 bounce={true}
               />
               <Image
@@ -48,8 +55,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="100px"
                 height="100px"
                 animSpeed=""
-                src="/assets/people/employee_2.png"
-                alt="/assets/people/employee_2.png"
+                src="assets/people/employee_2.png"
+                alt="assets/people/employee_2.png"
                 bounce={true}
               />
               <Image
@@ -60,8 +67,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="80px"
                 height="80px"
                 animSpeed=""
-                src="/assets/people/employee.png"
-                alt="/assets/people/employee.png"
+                src="assets/people/employee.png"
+                alt="assets/people/employee.png"
                 bounce={true}
               />
               <span />
@@ -73,8 +80,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="50px"
                 height="50px"
                 animSpeed=""
-                src="/assets/people/employee.png"
-                alt="/assets/people/employee.png"
+                src="assets/people/employee.png"
+                alt="assets/people/employee.png"
                 bounce={true}
               />
               <Image
@@ -85,8 +92,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="100px"
                 height="100px"
                 animSpeed=""
-                src="/assets/people/employee_2.png"
-                alt="/assets/people/employee_2.png"
+                src="assets/people/employee_2.png"
+                alt="assets/people/employee_2.png"
                 bounce={true}
               />
               <Image
@@ -97,8 +104,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="80px"
                 height="80px"
                 animSpeed=""
-                src="/assets/people/employee.png"
-                alt="/assets/people/employee.png"
+                src="assets/people/employee.png"
+                alt="assets/people/employee.png"
                 bounce={true}
               />
             </Grid>
@@ -117,8 +124,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
               {content}
             </Title>
           )}
-          {button && button.children && (
-            <Button type="gradient">{button.children}</Button>
+          {button && button.label && (
+            <Button type="gradient">{button.label}</Button>
           )}
         </GridChild>
       </Grid>

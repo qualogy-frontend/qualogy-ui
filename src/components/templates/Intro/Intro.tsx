@@ -6,8 +6,10 @@ import {
   IImageProps,
   H1Tag,
   Paragraph,
+  Circle,
+  Section,
 } from '../../atoms';
-import { Circle, Section, ModalVideo } from '../../molecules';
+import { ModalVideo } from '../../molecules';
 import { Player } from '../../organisms';
 import { PageProps, bgColors } from './Intro.interface';
 import { ThemeColors } from '../../../utils';

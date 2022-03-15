@@ -1,9 +1,9 @@
 import React from 'react';
-import { Section } from '../../molecules';
+import { Section } from '../../atoms';
 import { PostCollection } from '../../organisms';
 import { IPostsInterface } from './Posts.interface';
 
-export const Posts: React.FC<IPostsInterface> = ({ data }) => {
+export const Posts: React.FC<IPostsInterface> = ({ data, imageBase }) => {
   const { allPosts } = data;
   return (
     <div className="relative flex bg-gradient-to-t from-white to-transparent ">
@@ -18,6 +18,7 @@ export const Posts: React.FC<IPostsInterface> = ({ data }) => {
           allPosts={allPosts}
           title="Resource bibliotheek"
           sub="Recente blog artikelen"
+          imageBase={imageBase}
         />
       </Section>
     </div>

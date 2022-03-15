@@ -32,5 +32,5 @@ const Template: Story = (args) => (
   </GetInTouch>
 );
 
-export const Primary = Template.bind({});
-Primary.args = {};
+export const Default = Template.bind({});
+Default.args = {};

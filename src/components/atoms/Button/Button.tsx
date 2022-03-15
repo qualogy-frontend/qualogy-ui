@@ -27,6 +27,7 @@ export interface IButtonProps {
   minWidth?: string;
   color?: string;
   extraClasses?: string;
+  label?: string;
 }
 
 export const Button: React.FC<IButtonProps> = ({
@@ -36,6 +37,7 @@ export const Button: React.FC<IButtonProps> = ({
   disabled,
   type = 'default',
   extraClasses = '',
+  label,
 }) => {
   const ButtonType: any = ButtonTypeMapper[type];
   //const isALink: string = link.length > 0 ? "a" : "button";
@@ -48,7 +50,7 @@ export const Button: React.FC<IButtonProps> = ({
         disabled ? 'opacity-50' : 'opacity-100'
       }`}
     >
-      {children}
+      {children || label}
     </button>
   );
 };

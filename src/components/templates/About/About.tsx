@@ -7,10 +7,7 @@ import { CardLargeImage } from '../../molecules';
 import { ThemeColors } from '../../../utils';
 import { IAboutInterface } from './About.interface';
 
-export const About: React.FC<IAboutInterface> = ({
-  data,
-  imageBase = process.env.STRAPI_URL,
-}) => {
+export const About: React.FC<IAboutInterface> = ({ data, imageBase = '' }) => {
   const { title, sub, content, employee, button } = data;
   return (
     <section
@@ -51,7 +48,7 @@ export const About: React.FC<IAboutInterface> = ({
               style={{ color: ThemeColors.linkFont, marginRight: '8px' }}
             />
             <Paragraph fontSize="18px" fontWeight="400">
-              {button.children}
+              {button.label}
             </Paragraph>
           </Button>
         )}
