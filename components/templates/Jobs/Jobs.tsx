@@ -43,8 +43,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="50px"
                 height="50px"
                 animSpeed=""
-                src="/assets/people/employee.png"
-                alt="/assets/people/employee.png"
+                src="assets/people/employee.png"
+                alt="assets/people/employee.png"
                 bounce={true}
               />
               <Image
@@ -55,8 +55,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="100px"
                 height="100px"
                 animSpeed=""
-                src="/assets/people/employee_2.png"
-                alt="/assets/people/employee_2.png"
+                src="assets/people/employee_2.png"
+                alt="assets/people/employee_2.png"
                 bounce={true}
               />
               <Image
@@ -67,8 +67,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="80px"
                 height="80px"
                 animSpeed=""
-                src="/assets/people/employee.png"
-                alt="/assets/people/employee.png"
+                src="assets/people/employee.png"
+                alt="assets/people/employee.png"
                 bounce={true}
               />
               <span />
@@ -80,8 +80,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="50px"
                 height="50px"
                 animSpeed=""
-                src="/assets/people/employee.png"
-                alt="/assets/people/employee.png"
+                src="assets/people/employee.png"
+                alt="assets/people/employee.png"
                 bounce={true}
               />
               <Image
@@ -92,8 +92,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="100px"
                 height="100px"
                 animSpeed=""
-                src="/assets/people/employee_2.png"
-                alt="/assets/people/employee_2.png"
+                src="assets/people/employee_2.png"
+                alt="assets/people/employee_2.png"
                 bounce={true}
               />
               <Image
@@ -104,8 +104,8 @@ export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
                 width="80px"
                 height="80px"
                 animSpeed=""
-                src="/assets/people/employee.png"
-                alt="/assets/people/employee.png"
+                src="assets/people/employee.png"
+                alt="assets/people/employee.png"
                 bounce={true}
               />
             </Grid>

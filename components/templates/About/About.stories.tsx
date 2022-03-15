@@ -15,5 +15,5 @@ const Template: Story = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   data: data,
-  imageBase: '/assets/banner/',
+  imageBase: 'assets/banner/',
 };
