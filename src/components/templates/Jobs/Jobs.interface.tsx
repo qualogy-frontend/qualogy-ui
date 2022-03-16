@@ -38,7 +38,7 @@ export interface IJobInterface {
   title: string;
   description: string;
   link: string;
-  icon: 'apps' | 'browser' | 'chart' | 'cloud' | 'server' | 'system';
+  icon?: 'apps' | 'browser' | 'chart' | 'cloud' | 'server' | 'system';
   background_color?: string;
   salesforce_id: string;
 }

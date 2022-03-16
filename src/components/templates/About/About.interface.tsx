@@ -21,17 +21,17 @@ interface Formats {
 
 export interface ImageProps {
   id: number;
-  name: string;
-  alternativeText: string;
-  caption: string;
-  width: number;
-  height: number;
-  hash: string;
-  ext: string;
-  mime: string;
-  size: number;
   url: string;
-  formats: Formats | null;
+  alternativeText: string;
+  name?: string;
+  caption?: string;
+  width?: number;
+  height?: number;
+  hash?: string;
+  ext?: string;
+  mime?: string;
+  size?: number;
+  formats?: Formats | null;
 }
 
 interface Employee {

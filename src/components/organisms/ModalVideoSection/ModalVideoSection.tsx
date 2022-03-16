@@ -80,6 +80,7 @@ export const ModalVideoSection: FC<IModalVideoSectionProps> = ({
       ? `${baseUrl ? baseUrl : ''}${data.file[0].url}`
       : '');
   //  modal ? 'https://www.youtube.com/embed/bIrm37MIK5U' : 'https://www.youtube.com/embed/bIrm37MIK5U?start=0'
+  const bgBanner = "bg-[url('/assets/banner/home-banner.png')]";
   return (
     <Section>
       <div
@@ -90,7 +91,7 @@ export const ModalVideoSection: FC<IModalVideoSectionProps> = ({
       >
         <div
           //ref={modalRef}
-          className="flex justify-center items-center bg-home-banner bg-cover bg-center w-full h-full rounded shadow-xl pt-12"
+          className={`flex justify-center items-center ${bgBanner} bg-cover bg-center w-full h-full rounded shadow-xl pt-12`}
         >
           <span className="rounded-full p-2 bg-black bg-opacity-75 cursor-pointer">
             <BiPlay color="white" size={52} />

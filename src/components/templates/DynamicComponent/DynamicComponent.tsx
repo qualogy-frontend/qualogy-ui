@@ -1,15 +1,25 @@
 import React, { FC } from 'react';
 import {
+  JobSection,
+  ListSection,
+  ModalVideoSection,
+  ImageSection,
+  RoadMapSection,
+  SkillSection,
+  TextAndImageSection,
+  TextBlocks,
+} from '../../organisms';
+import {
   About,
   Customer,
   Intro,
   Jobs,
   Posts,
+  Team,
   TitleAndTextSection,
-  JobSection,
-} from '../../templates';
+} from '..';
 
-interface ContentProps {
+export interface ContentProps {
   __component: string;
   id: number;
 }
@@ -17,6 +27,7 @@ interface ContentProps {
 interface IDynamicComponentProps {
   layout: ContentProps[];
   background_color?: string;
+  imageBase?: string;
 }
 
 /**
@@ -31,6 +42,7 @@ const checkJobsNextComponent = (index: number, components: any) => {
 export const DynamicComponent: FC<IDynamicComponentProps> = ({
   layout,
   background_color,
+  imageBase,
 }) => {
   // layouts l
   const pageLayout = {
@@ -38,9 +50,18 @@ export const DynamicComponent: FC<IDynamicComponentProps> = ({
     customers: Customer,
     hero: Intro,
     jobs: Jobs,
+    video: ModalVideoSection,
     posts: Posts,
-    'title-and-text': TitleAndTextSection,
+    road: RoadMapSection,
+    employees: Team,
+    'image-section': ImageSection,
     'salesforce-jobs-group': JobSection,
+    'list-group': ListSection,
+    'skill-group': SkillSection,
+    'text-block-group': TextBlocks,
+    'text-and-image-group': TextAndImageSection,
+    'title-and-text': TitleAndTextSection,
+    // TODO: techs: Techs, tabs: Tabs, 'posts-scroll': PostsScroll,
   };
 
   /**
@@ -83,6 +104,7 @@ export const DynamicComponent: FC<IDynamicComponentProps> = ({
             key={index}
             showCircles={NextIsPost}
             background_color={background_color}
+            imageBase={imageBase}
           />
         );
       })}
