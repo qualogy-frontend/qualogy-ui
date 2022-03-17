@@ -1,0 +1,53 @@
+export const data = {
+  lang: { lang: 'nl', locale: true },
+  items: [
+    {
+      id: '1',
+      label: 'Career',
+      target: '_self',
+      icon: 'icon',
+      link: '/',
+      sub_item: [],
+    },
+    {
+      id: '2',
+      label: 'Excelence',
+      target: '_self',
+      icon: 'icon',
+      link: '/technical-excelence',
+      sub_item: [],
+    },
+    {
+      id: '3',
+      label: 'Solicitatieproces',
+      target: '_self',
+      icon: 'icon',
+      link: '/solicitatieproces',
+      sub_item: [],
+    },
+    {
+      id: '5',
+      label: 'Over ons',
+      target: '_self',
+      icon: 'icon',
+      link: '/over-ons',
+      sub_item: [],
+    },
+    {
+      id: '4',
+      label: 'Contact',
+      target: '_self',
+      icon: 'icon',
+      link: '/contact',
+      sub_item: [],
+    },
+    {
+      id: '11',
+      label: 'Vacatures',
+      target: '_self',
+      icon: 'icon',
+      link: '/vacatures',
+      sub_item: [],
+    },
+  ],
+};

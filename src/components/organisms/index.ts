@@ -6,6 +6,7 @@ export * from './ImageSection';
 export * from './JobSection';
 export * from './ListSection';
 export * from './ModalVideoSection';
+export * from './Navigation';
 export * from './PostCollection';
 export * from './RoadMapSection';
 export * from './SkillSection';
