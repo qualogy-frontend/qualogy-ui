@@ -4,7 +4,7 @@ import { breakPoints } from '../../../utils';
 import { FC } from 'react';
 import styled from 'styled-components';
 
-const createdResponsiveHeights = (heights?: string) => {
+export const createdResponsiveHeights = (heights?: string) => {
   const curvedheights = { xs: '', sm: '', md: '', lg: '', xl: '', '2xl': '' };
   if (heights) {
     const rawHeights = heights.split(' ');
@@ -102,7 +102,7 @@ export const Section: FC<ISectionInterface> = ({
   );
 };
 
-type LayoutProps = {
+export interface ISectionLayoutProps {
   curvedBackground?: string;
   curvedHeight?: string;
   responsiveHeights: {
@@ -113,9 +113,9 @@ type LayoutProps = {
     xl: string;
     '2xl': string;
   };
-};
+}
 
-const SectionLayout = styled.section<LayoutProps>`
+export const SectionLayout = styled.section<ISectionLayoutProps>`
   &.curved {
     overflow-x: hidden;
     &:before {

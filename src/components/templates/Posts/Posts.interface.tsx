@@ -39,23 +39,23 @@ interface Post {
   updated_at: string;
 }
 
-export type AuthorType = {
+export interface IAuthorProps {
   id: number;
   name: string;
   slug: string;
   about: string;
   picture: PictureType[];
   blog_posts: Post[];
-};
-
-export interface IPostInterface extends Post {
-  author: AuthorType;
 }
 
-type DataProps = {
-  allPosts: IPostInterface[];
-};
-export interface IPostsInterface {
+export interface IPostProps extends Post {
+  author: IAuthorProps;
+}
+
+interface DataProps {
+  allPosts: IPostProps[];
+}
+export interface IPostsProps {
   data: DataProps;
   imageBase: string;
 }

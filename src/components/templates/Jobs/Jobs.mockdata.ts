@@ -1,4 +1,4 @@
-export const jobs = {
+export const data = {
   sub: '',
   content: `Meer dan 20 jaarinnovatieve oplossingen voor onze klanten`,
   button: {

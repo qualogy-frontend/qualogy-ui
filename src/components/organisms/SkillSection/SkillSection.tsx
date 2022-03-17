@@ -3,7 +3,7 @@ import { CardContent } from '../../molecules';
 import { IJobInterface } from '../../templates';
 import React, { FC } from 'react';
 
-interface Props {
+export interface ISkillSectionProps {
   data: {
     title: string;
     button: IButtonProps;
@@ -11,7 +11,7 @@ interface Props {
   };
 }
 
-export const SkillSection: FC<Props> = ({ data }) => {
+export const SkillSection: FC<ISkillSectionProps> = ({ data }) => {
   const { title, button, skill } = data;
   return (
     <Section

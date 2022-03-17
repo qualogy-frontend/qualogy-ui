@@ -3,7 +3,7 @@ import { Anchor, H1Tag, Section, IButtonProps } from '../../atoms';
 import { CardContent } from '../../molecules';
 import { IJobInterface } from '../../templates';
 
-interface Props {
+export interface IJobSectionProps {
   data: {
     title: string;
     button: IButtonProps;
@@ -11,7 +11,7 @@ interface Props {
   };
 }
 
-export const JobSection: FC<Props> = ({ data }) => {
+export const JobSection: FC<IJobSectionProps> = ({ data }) => {
   const { title, button, job } = data;
   return (
     <Section

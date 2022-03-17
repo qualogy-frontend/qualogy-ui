@@ -2,11 +2,11 @@ import React, { FC } from 'react';
 import { H1Tag, Paragraph, Section } from '../../atoms';
 import { IListProps } from './List.interface';
 
-interface Props {
+export interface IListSectionProps {
   data: IListProps;
 }
 
-export const ListSection: FC<Props> = ({ data }) => {
+export const ListSection: FC<IListSectionProps> = ({ data }) => {
   const { title, description, list } = data;
   return (
     <Section px="" mPx="" mW="" mt="" mdMt="" mdMb="" extraClass="list-section">

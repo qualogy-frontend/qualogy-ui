@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { SkillSection } from './SkillSection';
-import { data } from '../../../mockdata/skillSection';
+import { data } from './SkillSection.mockdata';
 
 export default {
   component: SkillSection,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { TextBlocks } from './TextBlocks';
-import { data } from '../../../mockdata/textBlocks';
+import { data } from './TextBlocks.mockdata';
 
 export default {
   component: TextBlocks,

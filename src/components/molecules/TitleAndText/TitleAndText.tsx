@@ -3,7 +3,7 @@ import { BiRightArrowCircle } from 'react-icons/bi';
 import ReactMarkdown from 'react-markdown';
 import { H1Tag } from '../../atoms';
 
-interface Props {
+export interface ITitleAndTextProps {
   data: {
     title: string;
     content: string;
@@ -16,7 +16,7 @@ interface Props {
   };
 }
 
-export const TitleAndText: FC<Props> = ({ data }) => {
+export const TitleAndText: FC<ITitleAndTextProps> = ({ data }) => {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-x-16 lg:mt-8">
       <H1Tag

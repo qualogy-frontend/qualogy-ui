@@ -1,4 +1,4 @@
-export const posts = [
+export const data = [
   {
     title: 'The new reality: agile working from your living room',
     date: '2021-01-01',

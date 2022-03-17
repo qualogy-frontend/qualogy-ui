@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import { Section } from '../../atoms';
-import { TitleAndText } from '../../organisms';
+import { TitleAndText } from '../../molecules';
 import { bgColors, PageProps } from '../../templates';
 
-interface Props extends PageProps {
+export interface ITitleAndTextSectionProps extends PageProps {
   data: {
     title: string;
     content: string;
@@ -16,7 +16,10 @@ interface Props extends PageProps {
   };
 }
 
-export const TitleAndTextSection: FC<Props> = ({ data, background_color }) => {
+export const TitleAndTextSection: FC<ITitleAndTextSectionProps> = ({
+  data,
+  background_color,
+}) => {
   const bgColor = background_color
     ? bgColors[background_color]
     : 'bg-transparent';

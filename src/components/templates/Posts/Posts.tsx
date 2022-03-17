@@ -1,9 +1,9 @@
 import React from 'react';
 import { Section } from '../../atoms';
 import { PostCollection } from '../../organisms';
-import { IPostsInterface } from './Posts.interface';
+import { IPostsProps } from './Posts.interface';
 
-export const Posts: React.FC<IPostsInterface> = ({ data, imageBase }) => {
+export const Posts: React.FC<IPostsProps> = ({ data, imageBase }) => {
   const { allPosts } = data;
   return (
     <div className="relative flex bg-gradient-to-t from-white to-transparent ">

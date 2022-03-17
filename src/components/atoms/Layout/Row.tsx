@@ -53,7 +53,7 @@ export interface IRowLayoutProps {
   wrap?: string;
 }
 
-const RowLayout = styled.div<IRowLayoutProps>`
+export const RowLayout = styled.div<IRowLayoutProps>`
   display: flex;
   flex-direction: row;
   ${({ justify, align, width, mWidth, height, margin, wrap }) => css`

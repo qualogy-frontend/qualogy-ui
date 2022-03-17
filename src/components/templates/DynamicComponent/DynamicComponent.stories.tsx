@@ -1,12 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { DynamicComponent } from './DynamicComponent';
-import {
-  intro,
-  about,
-  titleAndText,
-  jobs,
-} from '../../../mockdata/dynamicPage';
+import { intro, about, titleAndText, jobs } from './DynamicComponent.mockdata';
 
 export default {
   component: DynamicComponent,

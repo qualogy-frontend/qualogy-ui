@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { RoadMapSection } from './RoadMapSection';
-import { data } from '../../../mockdata/roadMapSection';
+import { data } from './RoadMapSection.mockdata';
 
 export default {
   component: RoadMapSection,

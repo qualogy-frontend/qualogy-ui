@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { Customer } from './Customer';
-import { customer as data } from '../../../mockdata/customer';
+import { data } from './Customer.mockdata';
 
 export default {
   component: Customer,

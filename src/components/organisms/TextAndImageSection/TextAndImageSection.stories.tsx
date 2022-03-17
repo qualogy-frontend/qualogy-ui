@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { TextAndImageSection } from './TextAndImageSection';
-import { data } from '../../../mockdata/textAndImage';
+import { data } from './TextAndImageSection.mockdata';
 
 export default {
   component: TextAndImageSection,

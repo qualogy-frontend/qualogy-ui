@@ -119,16 +119,16 @@ export const about = {
   title: 'Ontdek Qualogy',
   sub: '',
   content: `
-  
-  ###### **Bij Qualogy ontwikkelen we samen met onze klanten slimme oplossingen die ervoor zorgen dat zij snel en efficiënt kunnen werken.**
-  
-  Van idee en implementatie tot gebruik en beheer. We gebruiken hiervoor standaard software en bewezen technologieën.
-  
-  
-  Al ontdekken we ook graag nieuwe werelden.
-  Door met lef en creativiteit naar complexe vraagstukken te kijken, komen we tot de beste oplossingen.
-  
-      `,
+    
+    ###### **Bij Qualogy ontwikkelen we samen met onze klanten slimme oplossingen die ervoor zorgen dat zij snel en efficiënt kunnen werken.**
+    
+    Van idee en implementatie tot gebruik en beheer. We gebruiken hiervoor standaard software en bewezen technologieën.
+    
+    
+    Al ontdekken we ook graag nieuwe werelden.
+    Door met lef en creativiteit naar complexe vraagstukken te kijken, komen we tot de beste oplossingen.
+    
+        `,
   employee: {
     reversed: false,
     button: null,

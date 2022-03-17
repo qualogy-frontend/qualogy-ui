@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { JobSection } from './JobSection';
-import { data } from '../../../mockdata/jobSection';
+import { data } from './JobSection.mockdata';
 
 export default {
   component: JobSection,

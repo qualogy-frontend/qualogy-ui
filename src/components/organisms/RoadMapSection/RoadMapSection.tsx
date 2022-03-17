@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { H1Tag, Paragraph, Section } from '../../atoms';
 import { ImageProps } from '../../templates';
 
-interface Props {
+export interface IRoadMapSectionProps {
   data: {
     id: number;
     title: string;
@@ -21,7 +21,10 @@ interface Props {
   imageBase?: string;
 }
 
-export const RoadMapSection: FC<Props> = ({ data, imageBase }) => {
+export const RoadMapSection: FC<IRoadMapSectionProps> = ({
+  data,
+  imageBase,
+}) => {
   const { title, sub, item, image_1, image_2, image_3, image_4, awards } = data;
   return (
     <Section px="" mPx="" mW="" mt="" mdMt="" mdMb="">

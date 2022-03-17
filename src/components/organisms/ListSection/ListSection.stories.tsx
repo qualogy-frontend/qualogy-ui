@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { ListSection } from './ListSection';
-import { data } from '../../../mockdata/listSection';
+import { data } from './ListSection.mockdata';
 
 export default {
   component: ListSection,

@@ -1,11 +1,11 @@
 import React from 'react';
 import { H1Tag, Paragraph, GridV1 as Grid } from '../../atoms';
 import { CardPost } from '../../molecules';
-import { IPostInterface } from '../../templates';
+import { IPostProps } from '../../templates';
 import { ThemeColors } from '../../../utils';
 
 export interface IPostCollectionProps {
-  allPosts: IPostInterface[];
+  allPosts: IPostProps[];
   sub: string;
   title: string;
   imageBase?: string;

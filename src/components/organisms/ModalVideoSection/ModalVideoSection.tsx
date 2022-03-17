@@ -3,7 +3,7 @@ import { BiPlay } from 'react-icons/bi';
 import { Section } from '../../atoms';
 import { ModalVideo } from '../../molecules';
 
-interface IPlayer {
+export interface IPlayer {
   type: 'video' | 'iframe';
   link: string;
 }

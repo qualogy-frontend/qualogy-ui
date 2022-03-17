@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { GridV1 as Grid, Section, H1Tag, Paragraph } from '../../atoms';
 
-type Block = {
+interface Block {
   id: number;
   title: string;
   content: string;
@@ -9,18 +9,16 @@ type Block = {
   text_layout?: string;
   grid_layout?: string;
   image?: string;
-};
-
-type Blocks = {
-  title?: string;
-  content: Block[];
-};
-
-interface Props {
-  data: Blocks;
 }
 
-export const TextBlocks: FC<Props> = ({ data }) => {
+export interface ITextBlocksProps {
+  data: {
+    title?: string;
+    content: Block[];
+  };
+}
+
+export const TextBlocks: FC<ITextBlocksProps> = ({ data }) => {
   const { title, content } = data;
   return (
     <Section>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { ModalVideoSection } from './ModalVideoSection';
-import { data } from '../../../mockdata/modalVideo';
+import { data } from './ModalVideoSection.mockdata';
 
 export default {
   component: ModalVideoSection,

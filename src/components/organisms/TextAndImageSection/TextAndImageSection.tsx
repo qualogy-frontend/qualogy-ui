@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { H1Tag, H2Tag, Section } from '../../atoms';
 import { ImageProps } from '../../templates';
 
-interface childProps {
+export interface ITextAndImageProps {
   data: {
     id: number;
     sub: string;
@@ -15,7 +15,7 @@ interface childProps {
   imageBase?: string;
 }
 
-export const TextAndImage: FC<childProps> = ({
+export const TextAndImage: FC<ITextAndImageProps> = ({
   data,
   reverse = false,
   imageBase,

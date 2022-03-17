@@ -12,7 +12,7 @@ import { TopCircle } from '../../molecules';
 import { ModalVideoSection } from '../../organisms';
 import { PageProps, bgColors } from './Intro.interface';
 
-type DataProps = {
+interface DataProps {
   id: number;
   title: string;
   content: string;
@@ -42,9 +42,9 @@ type DataProps = {
       }
     ];
   };
-};
+}
 
-interface IIntroProps extends PageProps {
+export interface IIntroProps extends PageProps {
   data: DataProps;
   baseUrl?: string;
 }

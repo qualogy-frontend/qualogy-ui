@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { About } from './About';
-import { about as data } from '../../../mockdata/about';
+import { data } from './About.mockdata';
 
 export default {
   component: About,

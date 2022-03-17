@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { CardPost } from './Card';
-import { posts } from '../../../mockdata/posts';
+import { data } from './Card.mockdata';
 
 export default {
   component: CardPost,
@@ -9,7 +9,6 @@ export default {
 } as Meta;
 
 const Template: Story = ({ post }) => {
-  console.log(post);
   return (
     <CardPost
       width="100%"
@@ -26,4 +25,4 @@ const Template: Story = ({ post }) => {
 };
 
 export const Default = Template.bind({});
-Default.args = { post: posts[0] };
+Default.args = { post: data };

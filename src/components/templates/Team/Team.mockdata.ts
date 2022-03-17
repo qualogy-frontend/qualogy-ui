@@ -1,4 +1,4 @@
-export const team = {
+export const data = {
   title: 'Our People',
   employee: [
     {

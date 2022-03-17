@@ -4,7 +4,7 @@ import { ButtonTypeMapper } from '../Button';
 /**
  * Map of button styles
  */
-const AnchorMap = {
+const AnchorTypeMapper = {
   ...ButtonTypeMapper,
   default: 'text-primary font-bold',
 };
@@ -12,7 +12,7 @@ const AnchorMap = {
 export interface IAnchorProps {
   children?: React.ReactNode;
   action?: () => void;
-  type?: keyof typeof AnchorMap;
+  type?: keyof typeof AnchorTypeMapper;
   disabled?: boolean;
   link?: string;
   active?: boolean;
@@ -39,7 +39,7 @@ export const Anchor: React.FC<IAnchorProps> = ({
   link = '',
   target = '_self',
 }) => {
-  const AnchorType: any = AnchorMap[type];
+  const AnchorType: any = AnchorTypeMapper[type];
 
   return (
     <a

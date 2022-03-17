@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Tab } from '../../molecules';
 import {
   JobSection,
   ListSection,
@@ -6,18 +7,12 @@ import {
   ImageSection,
   RoadMapSection,
   SkillSection,
+  Tech,
   TextAndImageSection,
   TextBlocks,
-} from '../../organisms';
-import {
-  About,
-  Customer,
-  Intro,
-  Jobs,
-  Posts,
-  Team,
   TitleAndTextSection,
-} from '..';
+} from '../../organisms';
+import { About, Customer, Intro, Jobs, Posts, Team } from '..';
 
 export interface ContentProps {
   __component: string;
@@ -53,7 +48,9 @@ export const DynamicComponent: FC<IDynamicComponentProps> = ({
     video: ModalVideoSection,
     posts: Posts,
     road: RoadMapSection,
+    tabs: Tab,
     employees: Team,
+    techs: Tech,
     'image-section': ImageSection,
     'salesforce-jobs-group': JobSection,
     'list-group': ListSection,
@@ -61,7 +58,7 @@ export const DynamicComponent: FC<IDynamicComponentProps> = ({
     'text-block-group': TextBlocks,
     'text-and-image-group': TextAndImageSection,
     'title-and-text': TitleAndTextSection,
-    // TODO: techs: Techs, tabs: Tabs, 'posts-scroll': PostsScroll,
+    // TODO: tabs: Tabs, 'posts-scroll': PostsScroll,
   };
 
   /**

@@ -2,14 +2,14 @@ import React, { FC } from 'react';
 import { Section } from '../../atoms';
 import { ImageProps, PageProps } from '../../templates';
 
-interface Props extends PageProps {
+export interface IImageSectionProps extends PageProps {
   data: {
     images: ImageProps[];
   };
   imageBase?: string;
 }
 
-export const ImageSection: FC<Props> = ({ data, imageBase }) => {
+export const ImageSection: FC<IImageSectionProps> = ({ data, imageBase }) => {
   const { images } = data;
   return (
     <Section
