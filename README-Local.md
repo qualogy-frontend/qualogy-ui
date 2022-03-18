@@ -10,7 +10,7 @@ Run `yarn` or `npm i` to install all dependencies
 
 Run `yarn storybook` to run the storybook on local environment
 
-Run `yarn build-storybook` & `yarn deploy-storybook` to deploy the latest changes to [Github page](https://cmuthuraj.github.io/qualogy_ui)
+Run `yarn build-storybook` & `yarn deploy-storybook` to deploy the latest changes to [Github page](https://qualogy-frontend.github.io/qualogy-ui)
 
 ---
 

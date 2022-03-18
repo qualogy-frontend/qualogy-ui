@@ -1,9 +1,9 @@
 {
-  "version": "0.1.30",
+  "version": "0.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "homepage": "https://cmuthuraj.github.io/qualogy_ui",
+  "homepage": "https://qualogy-frontend.github.io/qualogy-ui",
   "files": [
     "dist",
     "src"
@@ -39,16 +39,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "qualogy_ui_test",
-  "author": "cmuthuraj@qualogy.com",
-  "module": "dist/qualogy_ui.esm.js",
+  "name": "qualogy-ui",
+  "author": "qualogy-frontend@qualogy.com",
+  "module": "dist/qualogy-ui.esm.js",
   "size-limit": [
     {
-      "path": "dist/qualogy_ui.cjs.production.min.js",
+      "path": "dist/qualogy-ui.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/qualogy_ui.esm.js",
+      "path": "dist/qualogy-ui.esm.js",
       "limit": "10 KB"
     }
   ],
