@@ -1,5 +1,3 @@
-// TEMPLATES
-
 export * from './DynamicComponent';
 export * from './About';
 export * from './Customer';

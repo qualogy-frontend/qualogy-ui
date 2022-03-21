@@ -1,13 +1,14 @@
-// ORGANISMS
-
 export * from './Banner';
+export * from './Footer';
 export * from './GetInTouch';
 export * from './ImageSection';
 export * from './JobSection';
 export * from './ListSection';
 export * from './ModalVideoSection';
 export * from './Navigation';
+export * from './PostAuthor';
 export * from './PostCollection';
+export * from './PostTags';
 export * from './RoadMapSection';
 export * from './SkillSection';
 export * from './Tech';

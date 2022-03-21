@@ -1,8 +1,7 @@
-// MOLECULES
-
 export * from './Avatar';
 export * from './BreadCrumb';
 export * from './Card';
+export * from './Header';
 export * from './ModalVideo';
 export * from './Search';
 export * from './Tab';

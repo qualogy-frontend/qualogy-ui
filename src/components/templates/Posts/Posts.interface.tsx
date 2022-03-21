@@ -14,14 +14,14 @@ export type FormatPictureType = {
 
 export type PictureFormatType = {
   thumbnail: FormatPictureType;
-  large: FormatPictureType;
-  medium: FormatPictureType;
-  small: FormatPictureType;
+  large?: FormatPictureType;
+  medium?: FormatPictureType;
+  small?: FormatPictureType;
 };
 
 export type PictureType = {
   name: string;
-  format: PictureFormatType;
+  formats: PictureFormatType;
   url: string;
 };
 
@@ -45,7 +45,7 @@ export interface IAuthorProps {
   slug: string;
   about: string;
   picture: PictureType[];
-  blog_posts: Post[];
+  blog_posts?: Post[];
 }
 
 export interface IPostProps extends Post {
