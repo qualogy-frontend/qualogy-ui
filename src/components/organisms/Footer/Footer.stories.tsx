@@ -8,7 +8,17 @@ export default {
   title: 'organisms/Footer',
 } as Meta;
 
-const Template: Story = (args) => <Footer footerNavigation={data} {...args} />;
+const Template: Story = (args) => (
+  <Footer
+    footerNavigation={data}
+    imageUrls={{
+      logoWithTitle: '/assets/logo/logo-with-title.svg',
+      qualityControl1: '/assets/cert/quality-control-1.svg',
+      qualityControl2: '/assets/cert/quality-control-2.svg',
+    }}
+    {...args}
+  />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {};

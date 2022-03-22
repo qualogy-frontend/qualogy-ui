@@ -9,9 +9,14 @@ import {
 } from '../../atoms';
 import { ContactLink, SocialLink } from './Footer.style';
 
-interface FooterProps {
+export interface IFooterProps {
   backgroundCurved?: string;
   footerNavigation: any;
+  imageUrls: {
+    logoWithTitle: string;
+    qualityControl1: string;
+    qualityControl2: string;
+  };
 }
 
 // direction="column"
@@ -27,9 +32,10 @@ const groupTwoClass = `row-start-3 col-start-5 col-end-9 md:row-start-2 md:col-s
 const groupThreeClass = `row-start-3 lg:row-start-2 col-start-9 col-end-13 md:row-start-2 md:col-start-9 md:col-end-11 lg:col-start-9 lg:col-end-11 ${fixedClass}`;
 // const bp = 'lg:';
 
-export const Footer: React.FC<FooterProps> = ({
+export const Footer: React.FC<IFooterProps> = ({
   backgroundCurved = '#fff',
   footerNavigation,
+  imageUrls,
 }) => (
   <>
     <Section
@@ -55,7 +61,7 @@ export const Footer: React.FC<FooterProps> = ({
           className={`row-start-2 col-start-1 col-end-13 sm:col-start-1 md:col-end-5 lg:col-end-3 ${fixedClass} `}
         >
           <Image
-            src="/assets/logo/logo-with-title.svg"
+            src={imageUrls.logoWithTitle}
             alt="Qualogy logo"
             margin="0 auto"
             extraClass="w-40 "
@@ -94,12 +100,8 @@ export const Footer: React.FC<FooterProps> = ({
         <div
           className={`row-start-4 md:row-start-2 lg:row-start-2 col-start-1 col-end-13 md:col-start-11 md:col-end-13 lg:col-start-12 flex flex-row md:flex-col justify-around`}
         >
-          <Image src="/assets/cert/quality-control-2.svg" alt="" margin="0" />
-          <Image
-            src="/assets/cert/quality-control-1.svg"
-            alt=""
-            margin="16px 0"
-          />
+          <Image src={imageUrls.qualityControl1} alt="" margin="0" />
+          <Image src={imageUrls.qualityControl2} alt="" margin="16px 0" />
         </div>
         <div
           className={`row-start-5 col-start-1 col-end-6 lg:col-end-3 flex justify-center md:justify-start`}

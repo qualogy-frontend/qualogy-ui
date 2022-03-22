@@ -9,7 +9,12 @@ export default {
 } as Meta;
 
 const Template: Story = (args) => (
-  <Navigation lang={data.lang} items={data.items} {...args} />
+  <Navigation
+    lang={data.lang}
+    items={data.items}
+    logoUrl="assets/logo/logo.png"
+    {...args}
+  />
 );
 
 export const Default = Template.bind({});

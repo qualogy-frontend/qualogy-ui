@@ -37,9 +37,15 @@ export interface INavigationProps {
   editTheme?: (props: any) => void;
   lang: LangProps;
   items: menuItemsProps[];
+  logoUrl: string;
 }
 
-export const Navigation: FC<INavigationProps> = ({ head, lang, items }) => {
+export const Navigation: FC<INavigationProps> = ({
+  head,
+  lang,
+  items,
+  logoUrl,
+}) => {
   const {
     activeToggle,
     setActiveToggle,
@@ -58,11 +64,7 @@ export const Navigation: FC<INavigationProps> = ({ head, lang, items }) => {
       {head}
       <NavigationLayout>
         <LogoLink href="/" title="home">
-          <Image
-            margin="0"
-            src={`${process.env.STRAPI_URL}/assets/logo/logo.png`}
-            alt=""
-          />
+          <Image margin="0" src={logoUrl} alt="" />
           <Title
             color={ThemeColors.primaryFont}
             fontSize="18px"

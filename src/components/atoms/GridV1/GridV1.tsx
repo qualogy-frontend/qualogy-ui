@@ -50,7 +50,7 @@ export const GridV1: FC<IGridV1Props> = ({
 }) => {
   return (
     <div
-      className={`mx-auto flex justify-center ${mW} ${lgDirection} ${gapCols} ${gridCols} ${smGridCols} ${mdGridCols} ${lgGridCols} ${xlGridCols} ${xxlGridCols} ${gapRows} ${gridRows} ${smGridRows} ${mdGridRows} ${lgGridRows} ${xlGridRows} ${xxlGridRows} ${direction} ${extraClass}`}
+      className={`grid mx-auto justify-center ${mW} ${lgDirection} ${gapCols} ${gridCols} ${smGridCols} ${mdGridCols} ${lgGridCols} ${xlGridCols} ${xxlGridCols} ${gapRows} ${gridRows} ${smGridRows} ${mdGridRows} ${lgGridRows} ${xlGridRows} ${xxlGridRows} ${direction} ${extraClass}`}
     >
       {children}
     </div>
