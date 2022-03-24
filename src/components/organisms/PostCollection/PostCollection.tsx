@@ -30,28 +30,30 @@ export const PostCollection: React.FC<IPostCollectionProps> = ({
         </Paragraph>
         <H1Tag classes="text-center">{title}</H1Tag>
       </div>
-      <div>
-        <Grid
-          gridCols="grid-cols-1"
-          lgGridCols={cols}
-          extraClass="grid-flow-row auto-rows-max gap-x-0 sm:gap-x-9"
-        >
-          {allPosts.slice(0, count).map((post, index) => (
-            <CardPost
-              width="100%"
-              title={post.title}
-              date={post.date}
-              image={`${imageBase}${post.coverImage.url}`}
-              alt={post.slug}
-              author={post?.author?.name}
-              authorSlug={post?.author?.slug}
-              body={post.excerpt}
-              slug={post.slug}
-              key={index}
-            />
-          ))}
-        </Grid>
-      </div>
+      {allPosts && (
+        <div>
+          <Grid
+            gridCols="grid-cols-1"
+            lgGridCols={cols}
+            extraClass="grid-flow-row auto-rows-max gap-x-0 sm:gap-x-9"
+          >
+            {allPosts.slice(0, count).map((post, index) => (
+              <CardPost
+                width="100%"
+                title={post.title}
+                date={post.date}
+                image={`${imageBase}${post.coverImage.url}`}
+                alt={post.slug}
+                author={post?.author?.name}
+                authorSlug={post?.author?.slug}
+                body={post.excerpt}
+                slug={post.slug}
+                key={index}
+              />
+            ))}
+          </Grid>
+        </div>
+      )}
     </>
   );
 };
