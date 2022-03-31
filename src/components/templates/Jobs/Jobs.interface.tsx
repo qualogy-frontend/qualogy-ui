@@ -5,12 +5,12 @@ interface DataProps {
   content: string;
   button: IButtonProps;
 }
-export interface IJobsInterface {
+export interface IJobsProps {
   data: DataProps;
   showCircles?: boolean;
 }
 
-export interface SalesforceJobInterface {
+export interface ISalesforceJobProps {
   Name: string;
   Account_Manager_Name__c: string;
   AVTRRT__Account_Manager__c: string;
@@ -34,7 +34,7 @@ export interface SalesforceJobInterface {
   AVTRRT__Job_Contact_Email__c?: string;
 }
 
-export interface IJobInterface {
+export interface IJobProps {
   title: string;
   description: string;
   link: string;

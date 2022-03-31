@@ -60,3 +60,38 @@ export const Image: React.FC<IImageProps> = ({
     />
   );
 };
+export interface ICoverImageProps {
+  title?: string;
+  src: string;
+  slug: string;
+  extraClasses?: string;
+}
+
+export const CoverImage: React.FC<ICoverImageProps> = ({
+  title,
+  src,
+  slug,
+  extraClasses,
+}) => {
+  const image = (
+    <img
+      src={src}
+      alt={`Cover Image for ${title}`}
+      className={`w-full object-cover shadow-2xl ${extraClasses} rounded`}
+    />
+  );
+  return (
+    <div className="sm:mx-0">
+      {slug ? (
+        // <Link as={`/posts/${slug}`} href="/posts/[slug]">
+        // <a aria-label={title}>{image}</a>
+        <a aria-label={title} href="/posts/[slug]">
+          {image}
+        </a>
+      ) : (
+        // </Link>
+        image
+      )}
+    </div>
+  );
+};

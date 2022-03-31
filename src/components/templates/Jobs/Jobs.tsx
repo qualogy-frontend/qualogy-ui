@@ -9,10 +9,10 @@ import {
   Grid,
   GridChild,
 } from '../../atoms';
-import { IJobsInterface } from './Jobs.interface';
+import { IJobsProps } from './Jobs.interface';
 import { ThemeColors } from '../../../utils';
 
-export const Jobs: React.FC<IJobsInterface> = ({ data, showCircles }) => {
+export const Jobs: React.FC<IJobsProps> = ({ data, showCircles }) => {
   //
   const { sub, content, button } = data;
   //

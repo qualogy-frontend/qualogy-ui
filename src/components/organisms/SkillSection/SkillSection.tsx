@@ -1,13 +1,13 @@
 import { Anchor, H1Tag, Section, IButtonProps } from '../../atoms';
 import { CardContent } from '../../molecules';
-import { IJobInterface } from '../../templates';
+import { IJobProps } from '../../templates';
 import React, { FC } from 'react';
 
 export interface ISkillSectionProps {
   data: {
     title: string;
     button: IButtonProps;
-    skill: IJobInterface[];
+    skill: IJobProps[];
   };
 }
 
